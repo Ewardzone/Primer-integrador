@@ -1,0 +1,414 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(/Elementos/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #909090;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+h1 {
+  display: none;
+}
+
+.headerMain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 115px;
+  background-color: rgba(187, 181, 181, 0.603);
+  border-bottom: black solid 2px;
+}
+
+.containerImg {
+  width: 150px;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 5px;
+  margin-bottom: 3px;
+}
+
+.containerImg .logoMain {
+  width: 200px;
+  position: relative;
+}
+
+.navBar {
+  width: 90%;
+  margin: auto;
+}
+
+.menuHorizontal {
+  position: relative;
+  margin: auto;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menuHorizontal a {
+  text-decoration: none;
+  color: black;
+}
+
+.itemHorizontal {
+  position: relative;
+  width: 160px;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  margin: 3px;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.itemHorizontal.itemHorizontal:hover {
+  background: grey;
+  border-radius: 80%;
+  color: white;
+  -webkit-transition: 750ms;
+  transition: 750ms;
+}
+
+#desplegar ~ .menuVertical {
+  display: none;
+  overflow: hidden;
+}
+
+#desplegar:checked ~ .menuVertical {
+  display: block;
+}
+
+#desplegar {
+  display: none;
+}
+
+.inputLabel {
+  display: inline-block;
+  height: 24px;
+  line-height: 15px;
+  padding: 5px 10px;
+  background: rgba(187, 181, 181, 0.703);
+  border-radius: 15px;
+  color: grey;
+  position: relative;
+  left: 78%;
+}
+
+#desplegar ~ .inputLabel::before {
+  content: "▼";
+}
+
+#desplegar ~ .menuVertical {
+  display: none;
+  overflow: hidden;
+  padding: 10px 20px;
+  background: #dad2d2;
+  color: black;
+  position: relative;
+  top: 13px;
+  left: 66%;
+  width: 30%;
+}
+
+#desplegar ~ .menuVertical a {
+  text-decoration: none;
+  color: black;
+}
+
+#desplegar:checked ~ .menuVertical {
+  display: block;
+}
+
+#desplegar:checked ~ .inputLabel::before {
+  content: "▲";
+}
+
+.menuVertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 70%;
+  -webkit-box-sizing: 50px;
+          box-sizing: 50px;
+  width: 36%;
+  z-index: 5;
+}
+
+.itemVertical {
+  list-style: none;
+  position: relative;
+  width: 74px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  border-bottom: black solid 1px;
+}
+
+.containerTexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.tituloRepuestos {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 2em;
+  margin: auto;
+  position: relative;
+  top: 112px;
+}
+
+.texto1Repuestos {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+  margin: 1% 0;
+  position: relative;
+  top: 110px;
+}
+
+.contentRepuestos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 107px;
+}
+
+.productos {
+  border: 2px solid brown;
+  padding: 1%;
+  -webkit-box-shadow: 4px 4px 6px 1px black;
+          box-shadow: 4px 4px 6px 1px black;
+  height: 455pxpx;
+  width: 85%;
+  margin: 2%;
+}
+
+.productos img {
+  display: block;
+  width: 250px;
+  margin: 2% auto;
+  border: black solid 2px;
+  border-radius: 15px;
+  outline: brown solid 2px;
+}
+
+.productos p {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 1em;
+  text-align: center;
+}
+
+.productos h3 {
+  font-family: "Oswald", sans-serif;
+  padding: 2%;
+  color: green;
+  font-size: 2em;
+  display: block;
+  margin: 2% auto;
+  background-color: #a8a7a7;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 45px 5px 45px 5px;
+  border: green solid 2px;
+}
+
+.productos button {
+  display: block;
+  position: relative;
+  left: 58%;
+  bottom: 2%;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #ce3e0a;
+  font-family: "Oswald", sans-serif;
+  border: black solid 2px;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 6px 1px black;
+          box-shadow: 4px 4px 6px 1px black;
+}
+
+.productos button a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.footerMain {
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: rgba(187, 181, 181, 0.603);
+  border-top: black 2px solid;
+  position: relative;
+  top: 20vh;
+}
+
+.footerMain h3,
+.footerMain h5 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: grey;
+  margin: 1px auto;
+}
+
+.footerMain .redes {
+  text-align: center;
+  margin-top: 7px;
+}
+
+.footerMain .redes a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footerMain .redes i {
+  padding: 0 15px;
+}
+
+.footerMain .redes i:hover {
+  -webkit-transform: scale(2.3);
+          transform: scale(2.3);
+}
+
+.footerMain p {
+  text-align: right;
+  margin-right: 5px;
+  font-family: "Oswald", sans-serif;
+  color: #181313;
+  font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .containerImg .logoMain {
+    width: 250px;
+  }
+  .inputLabel {
+    left: 84%;
+    bottom: 16px;
+    font-size: 1.5em;
+  }
+  #desplegar ~ .menuVertical {
+    left: 76%;
+    font-size: 1.5em;
+    bottom: 4px;
+    width: 25%;
+  }
+  .headerMain {
+    height: 131px;
+  }
+  .tituloRepuestos {
+    top: 125px;
+  }
+  .texto1Repuestos {
+    top: 120px;
+    margin: auto;
+  }
+  .contentRepuestos .productos button {
+    left: 80%;
+  }
+  .footerMain {
+    position: relative;
+  }
+  .footerMain h3 {
+    font-size: 1em;
+  }
+  .footerMain h5 {
+    font-size: 1em;
+  }
+  .footerMain i {
+    font-size: 1em;
+  }
+  .footerMain p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inputLabel {
+    display: none;
+  }
+  #desplegar:checked ~ .menuVertical {
+    display: none;
+  }
+  .menuHorizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contentRepuestos .productos {
+    width: 29%;
+  }
+  .contentRepuestos .productos button {
+    left: 59%;
+    bottom: 0;
+  }
+  .footerMain {
+    position: relative;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+/*# sourceMappingURL=stylesRepuestos.css.map */
